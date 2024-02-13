@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content%}
+
+<button class="ui-button ui-widget ui-corner-all">Click me</button>
+<button class="ui-button ui-widget ui-corner-all">Click me</button>
+<button class="ui-button ui-widget ui-corner-all">Click me</button>
+
+<script>
+  $("button").click((e) => {
+    console.log(e)
+  });
+</script>
+
+{% endblock %}
