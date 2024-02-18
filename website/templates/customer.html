@@ -10,9 +10,13 @@
             <p class="card-text"><b>Email: </b>{{ customer.email }}</p>
             <p class="card-text"><b>Phone: </b>{{ customer.phone }}</p>
             <p class="card-text"><b>Address: </b>{{ customer.address }}</p>
+            <p class="card-text"><b>City: </b>{{ customer.city }}</p>
+            <p class="card-text"><b>State: </b>{{ customer.state }}</p>
+            <p class="card-text"><b>Zip code: </b>{{ customer.zip_code }}</p>
         </div>
         <div class="card-footer">
             <a href="{% url 'delete_customer' customer.id %}" class="btn btn-danger">Delete</a>
+            <a href="{% url 'edit_customer' customer.id %}" class="btn btn-secondary">Edit</a>
         </div>
     </div>
 </div>
